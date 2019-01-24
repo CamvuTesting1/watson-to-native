@@ -1,0 +1,95 @@
+{
+  "context": {
+    "JobId": "'job id'",
+    "JobName": "'job name'",
+    "mycreds": {
+      "user": "c12d1d9f-825b-45e3-813e-17aa088bc365",
+      "password": "pby871neG87XWuhShMCQxBk2iKadIzfcMdtq6Mdd2KFRWP7IAfv3WdHzexkvz0jZ"
+    },
+    "UsermodPTF": "<? input.text.extract('[uU]+[aA]+[0-9]+', 0) ?>",
+    "UsermodAPAR": "<? input.text.extract('[aA]+[aA]+[0-9]+', 0) ?>",
+    "JoblogOutput": "",
+    "UsermodAPAR23": "<? input.text.extract('[bB]+[aA]+[0-9]+', 0) ?>",
+    "UsermodStatus": "user-mod status",
+    "skip_user_input": true,
+    "useClientActions": true
+  },
+  "output": {
+    "text": {
+      "values": [
+        "Looking up $UsermodPTF $UsermodAPAR23 now...jumping to next node..."
+      ],
+      "selection_policy": "sequential"
+    }
+  },
+  "actions": [
+    {
+      "name": "QueryPTFUsermod",
+      "type": "client",
+      "parameters": {
+        "UsermodPTF": "$UsermodAPAR23"
+      },
+      "result_variable": "JoblogOutput"
+    }
+  ]
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"<? input.text.extract('[abcduABCDU]+[aA]+[0-9][0-9][0-9][0-9][0-9]', 0) ?>"
+
+
+
+
+
+
+
+
+
+
+{
+  "context": {
+    "JobId": "'job id'",
+    "JobName": "'job name'",
+    "mycreds": {
+      "user": "c12d1d9f-825b-45e3-813e-17aa088bc365",
+      "password": "pby871neG87XWuhShMCQxBk2iKadIzfcMdtq6Mdd2KFRWP7IAfv3WdHzexkvz0jZ"
+    },
+    "UsermodPTF": "<? input.text.extract('[abcduABCDU]+[aA]+[0-9][0-9][0-9][0-9][0-9]', 0) ?>",
+    "UsermodAPAR": "<? input.text.extract('[abcduABCDU]+[aA]+[0-9][0-9][0-9][0-9][0-9]', 0) ?>",
+    "JoblogOutput": "",
+    "UsermodAPAR23": "<? input.text.extract('[abcduABCDU]+[aA]+[0-9][0-9][0-9][0-9][0-9]', 0) ?>",
+    "UsermodStatus": "user-mod status",
+    "skip_user_input": true,
+    "useClientActions": true
+  },
+  "output": {
+    "text": {
+      "values": [
+        "Looking up $UsermodPTF $UsermodAPAR23 now...jumping to next node..."
+      ],
+      "selection_policy": "sequential"
+    }
+  },
+  "actions": [
+    {
+      "name": "QueryPTFUsermod",
+      "type": "client",
+      "parameters": {
+        "UsermodPTF": "$UsermodAPAR23"
+      },
+      "result_variable": "JoblogOutput"
+    }
+  ]
+}

@@ -1,0 +1,584 @@
+{
+   "name":"SMPE-Kevin",
+   "intents":[
+      {
+         "intent":"General_Greetings",
+         "examples":[
+            {
+               "text":"How have you been?"
+            },
+            {
+               "text":"Greetings"
+            },
+            {
+               "text":"Have you been well?"
+            },
+            {
+               "text":"Hello Agent"
+            },
+            {
+               "text":"Hello"
+            },
+            {
+               "text":"Hello I am looking for some help here"
+            },
+            {
+               "text":"What's new?"
+            },
+            {
+               "text":"Ok take me back"
+            },
+            {
+               "text":"Looking good eve"
+            },
+            {
+               "text":"How r u?"
+            },
+            {
+               "text":"How is it going?"
+            },
+            {
+               "text":"How are you today?"
+            },
+            {
+               "text":"Hey how are you doing"
+            },
+            {
+               "text":"Hey there all"
+            },
+            {
+               "text":"Hey there"
+            },
+            {
+               "text":"Hey twin"
+            },
+            {
+               "text":"Hey you"
+            },
+            {
+               "text":"Hi advisor"
+            },
+            {
+               "text":"Hi there"
+            },
+            {
+               "text":"How are things going?"
+            },
+            {
+               "text":"Good to see you"
+            },
+            {
+               "text":"Good morning"
+            },
+            {
+               "text":"Good evening"
+            },
+            {
+               "text":"Good day"
+            },
+            {
+               "text":"hiya"
+            },
+            {
+               "text":"yo"
+            },
+            {
+               "text":"hi"
+            },
+            {
+               "text":"You there"
+            },
+            {
+               "text":"Who is this?"
+            },
+            {
+               "text":"What's up?"
+            }
+         ],
+         "description":"Greetings"
+      },
+      {
+         "intent":"Help",
+         "examples":[
+            {
+               "text":"can you help"
+            },
+            {
+               "text":"can you assist me"
+            },
+            {
+               "text":"help"
+            },
+            {
+               "text":"help me decide"
+            },
+            {
+               "text":"help me"
+            },
+            {
+               "text":"i need assistance"
+            }
+         ],
+         "description":"Ask for help"
+      },
+      {
+         "intent":"Connect_zOs",
+         "examples":[
+            {
+               "text":"what can you do"
+            },
+            {
+               "text":"Test"
+            },
+            {
+               "text":"Testing"
+            },
+            {
+               "text":"Connect"
+            },
+            {
+               "text":"connect to zOs"
+            },
+            {
+               "text":"can you test yet"
+            },
+            {
+               "text":"can you work yet"
+            },
+            {
+               "text":"are you working"
+            },
+            {
+               "text":"just checking"
+            },
+            {
+               "text":"I can make query?"
+            },
+            {
+               "text":"Can you take queries now?"
+            },
+            {
+               "text":"What can you do?"
+            }
+         ],
+         "description":"Test connecting to z/Os"
+      },
+      {
+         "intent":"Cancel",
+         "examples":[
+            {
+               "text":"I want it no more"
+            },
+            {
+               "text":"Kevin"
+            },
+            {
+               "text":"forget it"
+            },
+            {
+               "text":"cancel that"
+            },
+            {
+               "text":"i changed my mind"
+            },
+            {
+               "text":"cancel the request"
+            },
+            {
+               "text":"i don't want a table anymore anymore"
+            },
+            {
+               "text":"nevermind"
+            },
+            {
+               "text":"never mind"
+            }
+         ],
+         "description":"Cancel the current request"
+      },
+      {
+         "intent":"Goodbye",
+         "examples":[
+            {
+               "text":"arrivederci"
+            },
+            {
+               "text":"bye"
+            },
+            {
+               "text":"so long"
+            },
+            {
+               "text":"good bye"
+            },
+            {
+               "text":"see ya"
+            },
+            {
+               "text":"ciao"
+            }
+         ],
+         "description":"Good byes"
+      },
+      {
+         "intent":"Thanks",
+         "examples":[
+            {
+               "text":"much appreciated"
+            },
+            {
+               "text":"many thanks"
+            },
+            {
+               "text":"i appreciate it"
+            },
+            {
+               "text":"that's nice of you"
+            },
+            {
+               "text":"thanks"
+            },
+            {
+               "text":"thx"
+            },
+            {
+               "text":"thank you"
+            },
+            {
+               "text":"thank you very much"
+            }
+         ],
+         "description":"Thanks"
+      }
+   ],
+   "entities":[
+      {
+         "entity":"sys-time",
+         "values":[
+
+         ]
+      },
+      {
+         "entity":"sys-number",
+         "values":[
+
+         ]
+      },
+      {
+         "entity":"sys-location",
+         "values":[
+
+         ]
+      },
+      {
+         "entity":"native_sys_name",
+         "values":[
+            {
+               "type":"synonyms",
+               "value":"MES4",
+               "synonyms":[
+                  "MES04"
+               ]
+            },
+            {
+               "type":"synonyms",
+               "value":"MES2",
+               "synonyms":[
+                  "MES02"
+               ]
+            },
+            {
+               "type":"synonyms",
+               "value":"MES3",
+               "synonyms":[
+                  "MES03"
+               ]
+            },
+            {
+               "type":"synonyms",
+               "value":"MES1",
+               "synonyms":[
+                  "MES01"
+               ]
+            }
+         ],
+         "fuzzy_match":true
+      },
+      {
+         "entity":"sys-person",
+         "values":[
+
+         ]
+      },
+      {
+         "entity":"sys-date",
+         "values":[
+
+         ]
+      }
+   ],
+   "language":"en",
+   "metadata":{
+      "api_version":{
+         "major_version":"v1",
+         "minor_version":"2018-07-10"
+      }
+   },
+   "description":"A simple demo of SMPE virtual assistant",
+   "dialog_nodes":[
+      {
+         "type":"response_condition",
+         "output":{
+            "text":{
+               "values":[
+                  "Hello there, Kevin!",
+                  "Hi there",
+                  "Hi. How can I help"
+               ],
+               "selection_policy":"sequential"
+            }
+         },
+         "parent":"node_13_1502484041694",
+         "metadata":{
+
+         },
+         "dialog_node":"node_28_1522448362216",
+         "previous_sibling":"node_15_1488295465298"
+      },
+      {
+         "type":"response_condition",
+         "output":{
+            "text":{
+               "values":[
+                  "Hello. Good afternoon, Kevin!",
+                  "Hi there. It's a beautiful afternoon",
+                  "Good afternoon. How can I help?"
+               ],
+               "selection_policy":"sequential"
+            }
+         },
+         "parent":"node_13_1502484041694",
+         "metadata":{
+
+         },
+         "conditions":"now().after('12:00:00') && now().before('16:59:59')",
+         "dialog_node":"node_1_1495022305143",
+         "previous_sibling":"node_16_1488295517679"
+      },
+      {
+         "type":"response_condition",
+         "output":{
+            "text":{
+               "values":[
+                  "Hello. Good evening, Kevin!",
+                  "Hi. Good evening",
+                  "Hello. How can I help this evening?"
+               ],
+               "selection_policy":"sequential"
+            }
+         },
+         "parent":"node_13_1502484041694",
+         "metadata":{
+
+         },
+         "conditions":"now().after('17:00:00')",
+         "dialog_node":"node_15_1488295465298",
+         "previous_sibling":"node_1_1495022305143"
+      },
+      {
+         "type":"response_condition",
+         "output":{
+            "text":{
+               "values":[
+                  "Hello. Good morning, Kevin!",
+                  "It's a beautiful morning. Hello",
+                  "Hi there. How can I help you this morning?"
+               ],
+               "selection_policy":"sequential"
+            }
+         },
+         "parent":"node_13_1502484041694",
+         "metadata":{
+
+         },
+         "conditions":"now().after('04:00:00') && now().before('11:59:59')",
+         "dialog_node":"node_16_1488295517679"
+      },
+      {
+         "type":"standard",
+         "output":{
+            "text":"OK. Let me know how I can help"
+         },
+         "parent":"node_22_1467833484410",
+         "metadata":{
+
+         },
+         "conditions":"@reply:no",
+         "dialog_node":"node_21_1468350173406",
+         "previous_sibling":"node_19_1468350024009"
+      },
+      {
+         "type":"standard",
+         "output":{
+            "text":{
+               "values":[
+                  "OK. Transferring... [Use IBM Cloud Functions to connect to backend systems]"
+               ]
+            }
+         },
+         "parent":"node_22_1467833484410",
+         "metadata":{
+
+         },
+         "conditions":"@reply:yes",
+         "dialog_node":"node_19_1468350024009"
+      },
+      {
+         "type":"standard",
+         "output":{
+            "text":{
+               "values":[
+                  "Hope to see you again soon, Kevin.",
+                  "See you later, Kevin.",
+                  "Good bye for now, Kevin."
+               ],
+               "selection_policy":"sequential"
+            }
+         },
+         "parent":"node_1_1516824993307",
+         "metadata":{
+
+         },
+         "conditions":"#Goodbye",
+         "dialog_node":"node_12_1468329566917",
+         "previous_sibling":"node_13_1502484041694"
+      },
+      {
+         "type":"standard",
+         "output":{
+            "text":{
+               "values":[
+                  "You're welcome. Thank you for checking me out. I'll do more services soon.",
+                  "My pleasure to answer. I look forward to being able to answer more soon."
+               ],
+               "selection_policy":"sequential"
+            }
+         },
+         "parent":"node_1_1516824993307",
+         "metadata":{
+
+         },
+         "conditions":"#Thanks",
+         "dialog_node":"node_2_1468243505617",
+         "previous_sibling":"node_12_1468329566917"
+      },
+      {
+         "type":"standard",
+         "output":{
+
+         },
+         "parent":"node_1_1516824993307",
+         "metadata":{
+
+         },
+         "conditions":"#General_Greetings",
+         "dialog_node":"node_13_1502484041694"
+      },
+      {
+         "type":"standard",
+         "output":{
+
+         },
+         "metadata":{
+
+         },
+         "dialog_node":"node_1_1538595088731",
+         "previous_sibling":"node_22_1467833484410"
+      },
+      {
+         "type":"standard",
+         "title":"Test connecting to z/Os",
+         "output":{
+            "text":{
+               "values":[
+                  "You would like to test connecting to z/Os system?"
+               ],
+               "selection_policy":"sequential"
+            }
+         },
+         "metadata":{
+
+         },
+         "conditions":"#Connect_zOs",
+         "digress_in":"does_not_return",
+         "dialog_node":"node_22_1467833484410",
+         "digress_out":"allow_all_never_return",
+         "previous_sibling":"Opening"
+      },
+      {
+         "type":"standard",
+         "output":{
+            "text":{
+               "values":[
+                  "I am sorry I am not yet trained to work with that. I hope to be able to do that soon."
+               ],
+               "selection_policy":"sequential"
+            }
+         },
+         "metadata":{
+
+         },
+         "conditions":"anything_else",
+         "digress_in":"returns",
+         "dialog_node":"node_2_1467831978407",
+         "digress_out":"allow_all",
+         "previous_sibling":"node_1_1516824993307"
+      },
+      {
+         "type":"folder",
+         "title":"Small Talk",
+         "metadata":{
+
+         },
+         "digress_in":"not_available",
+         "dialog_node":"node_1_1516824993307",
+         "previous_sibling":"node_1_1538595088731"
+      },
+      {
+         "type":"standard",
+         "title":"Opening",
+         "output":{
+            "text":{
+               "values":[
+                  "Hello, Kevin. I’m a demo virtual agent to assist you in querying the native systems. I am still being trained to do my services, thus for now I can only so some small talks."
+               ],
+               "selection_policy":"sequential"
+            }
+         },
+         "context":{
+            "no_queries":true
+         },
+         "metadata":{
+
+         },
+         "conditions":"welcome",
+         "dialog_node":"Opening"
+      }
+   ],
+   "workspace_id":"3a53a62a-55f3-436b-8d15-f50d0b3068af",
+   "counterexamples":[
+      {
+         "text":"what is your nickname"
+      },
+      {
+         "text":"where is the best place to commit suicide"
+      },
+      {
+         "text":"wil it rain today"
+      },
+      {
+         "text":"yes"
+      }
+   ],
+   "learning_opt_out":false
+}

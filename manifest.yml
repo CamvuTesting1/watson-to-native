@@ -1,0 +1,10 @@
+applications:
+<<<<<<< HEAD
+- name: devicesupport
+=======
+- name: SMPE
+>>>>>>> 52b2b638ec556707763114cdf5d95738229ff1a1
+  command: npm start
+  path: .
+  memory: 256M
+  instances: 1

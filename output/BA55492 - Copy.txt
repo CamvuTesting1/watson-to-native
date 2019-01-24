@@ -1,0 +1,28 @@
+1PAGE 0001  - NOW SET TO GLOBAL ZONE DATE 12/19/18  TIME 16:42:39  SMP/E 36.100  SMPLIST  OUTPUT          
+   
+   LIST SYSMOD(BA55492).                                                              
+1PAGE 0002  - NOW SET TO GLOBAL ZONE          DATE 12/19/18  TIME16:42:39  SMP/E 36.100  SMPLIST  OUTPUT                
+                                                
+ GLOBAL   SYSMOD ENTRIES                                         
+                                  
+                           
+   NAME                                                                                                                  
+                                                                                    
+ BA55492   TYPE            = APAR                
+           STATUS          = REC                                                                                         
+           REWORK          = 2018137                                                                         
+           DATE/TIME REC   = 18.347  13:18:20     
+           APPLY ZONE      = IPL320T                                                                                     
+           SREL   VER(001) = Z038                                                              
+           FMID   VER(001) = HDZ2230                                                                                     
+         PRE    VER(001) = UA93416                                                                                     
+           MOD             = IDCSS02                                                   
+           HOLDSYSTEM(INT) = RESTART(BA55492)                                                                            
+                                                                                                            
+1PAGE 0003  - NOW SET TO GLOBAL ZONE          DATE 12/19/18  TIME 16:42:39  SMP/E 36.100  SMPLIST  OUTPUT                
+                                                                                                                         
+ LIST     SUMMARY REPORT FOR GLOBAL                                                                                      
+                             
+ ENTRY-TYPE   ENTRY-NAME         STATUS                                                                                  
+                                                                                      
+ SYSMOD       BA55492            STARTS ON PAGE 0002                  

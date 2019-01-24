@@ -1,0 +1,1735 @@
+{
+  "name": "CloudFunction",
+  "intents": [
+    {
+      "intent": "InstallFix",
+      "examples": [
+        {
+          "text": "Install a PTF"
+        },
+        {
+          "text": "Install"
+        },
+        {
+          "text": "Installing"
+        },
+        {
+          "text": "Install a fix"
+        },
+        {
+          "text": "Install an APAR"
+        }
+      ],
+      "description": "Install an APAR or a PTF"
+    },
+    {
+      "intent": "IPL",
+      "examples": [
+        {
+          "text": "I need an IPL"
+        },
+        {
+          "text": "Can you IPL?"
+        },
+        {
+          "text": "I want to IPL the system"
+        },
+        {
+          "text": "IPL"
+        }
+      ],
+      "description": "IPl the native sytem"
+    },
+    {
+      "intent": "Thanks",
+      "examples": [
+        {
+          "text": "Thank you very much"
+        },
+        {
+          "text": "Thanks"
+        },
+        {
+          "text": "Ok good"
+        },
+        {
+          "text": "Thank you"
+        },
+        {
+          "text": "Ty"
+        },
+        {
+          "text": "Thanks a lot"
+        },
+        {
+          "text": "Thanks lot"
+        },
+        {
+          "text": "Tks"
+        },
+        {
+          "text": "Tks lot"
+        },
+        {
+          "text": "That's nice"
+        },
+        {
+          "text": "good"
+        }
+      ],
+      "description": "Thanks"
+    },
+    {
+      "intent": "AskRelease",
+      "examples": [
+        {
+          "text": "What systems"
+        },
+        {
+          "text": "List the systems"
+        },
+        {
+          "text": "System list"
+        },
+        {
+          "text": "Which systems"
+        }
+      ],
+      "description": "Query the systems on a release"
+    },
+    {
+      "intent": "Help",
+      "examples": [
+        {
+          "text": "Help"
+        },
+        {
+          "text": "I want to make some query"
+        },
+        {
+          "text": "Got something for you to do"
+        },
+        {
+          "text": "can you do this"
+        },
+        {
+          "text": "Can you help"
+        },
+        {
+          "text": "Do this"
+        },
+        {
+          "text": "I need assistance"
+        },
+        {
+          "text": "Do this for me"
+        },
+        {
+          "text": "I want help"
+        },
+        {
+          "text": "I need help"
+        },
+        {
+          "text": "I need you to do this"
+        }
+      ],
+      "description": "User request help"
+    },
+    {
+      "intent": "Greetings",
+      "examples": [
+        {
+          "text": "Good evening"
+        },
+        {
+          "text": "Hola"
+        },
+        {
+          "text": "Hi there"
+        },
+        {
+          "text": "Good morning"
+        },
+        {
+          "text": "Good afternoon"
+        },
+        {
+          "text": "Hello"
+        },
+        {
+          "text": "How do you do?"
+        },
+        {
+          "text": "Hey"
+        },
+        {
+          "text": "Hellooo"
+        },
+        {
+          "text": "Greetings"
+        },
+        {
+          "text": "Hey there"
+        },
+        {
+          "text": "Hello bot"
+        },
+        {
+          "text": "Hi"
+        }
+      ],
+      "description": "User's greeting"
+    },
+    {
+      "intent": "QueryUsermod",
+      "examples": [
+        {
+          "text": "APAR status"
+        },
+        {
+          "text": "PTF status"
+        },
+        {
+          "text": "Query"
+        },
+        {
+          "text": "Query PTF"
+        },
+        {
+          "text": "Checking PTF"
+        },
+        {
+          "text": "Check PTF"
+        },
+        {
+          "text": "Is this APAR installed?"
+        },
+        {
+          "text": "Query APAR"
+        },
+        {
+          "text": "Check +APAR"
+        },
+        {
+          "text": "Check ++APAR"
+        },
+        {
+          "text": "Check APAR"
+        },
+        {
+          "text": "Is PTF installed?"
+        },
+        {
+          "text": "Sysmod status"
+        }
+      ],
+      "description": "Query usermod"
+    },
+    {
+      "intent": "about_bot",
+      "examples": [
+        {
+          "text": "What service do you have?"
+        },
+        {
+          "text": "tell me your favorite color"
+        },
+        {
+          "text": "know any jokes"
+        },
+        {
+          "text": "i want jokes"
+        },
+        {
+          "text": "how tall are you"
+        },
+        {
+          "text": "whats your name"
+        },
+        {
+          "text": "what's your favorite"
+        },
+        {
+          "text": "what types of food do you like"
+        },
+        {
+          "text": "what's your"
+        },
+        {
+          "text": "whats your favorite color"
+        },
+        {
+          "text": "when were you born"
+        },
+        {
+          "text": "what is your favourite music"
+        },
+        {
+          "text": "what do i call you"
+        },
+        {
+          "text": "what are you called"
+        },
+        {
+          "text": "what is your name"
+        },
+        {
+          "text": "what kind of food do you eat"
+        },
+        {
+          "text": "whats your favorite movie"
+        },
+        {
+          "text": "what's your name"
+        },
+        {
+          "text": "what music do you like"
+        },
+        {
+          "text": "what is your favourite colour"
+        },
+        {
+          "text": "what is your favourite food"
+        },
+        {
+          "text": "how old are you"
+        },
+        {
+          "text": "your name"
+        },
+        {
+          "text": "tell me your favorite foods"
+        },
+        {
+          "text": "What can you do?"
+        },
+        {
+          "text": "What can you do"
+        },
+        {
+          "text": "What do you do"
+        },
+        {
+          "text": "Who made you?"
+        }
+      ],
+      "description": "About bot"
+    },
+    {
+      "intent": "AskRelease2",
+      "examples": [
+        {
+          "text": "What is the release"
+        },
+        {
+          "text": "what release"
+        },
+        {
+          "text": "Which release"
+        }
+      ],
+      "description": "What release on the system"
+    },
+    {
+      "intent": "Goodbye",
+      "examples": [
+        {
+          "text": "See you later"
+        },
+        {
+          "text": "So long"
+        },
+        {
+          "text": "That's it"
+        },
+        {
+          "text": "Good night"
+        },
+        {
+          "text": "byeeeeee"
+        },
+        {
+          "text": "Goodbye"
+        },
+        {
+          "text": "Thanks bye"
+        },
+        {
+          "text": "Ok bye"
+        },
+        {
+          "text": "Bye"
+        },
+        {
+          "text": "Good bye"
+        },
+        {
+          "text": "Stop"
+        },
+        {
+          "text": "We are done"
+        }
+      ],
+      "description": "Goodbye"
+    }
+  ],
+  "entities": [
+    {
+      "entity": "sys-date",
+      "values": []
+    },
+    {
+      "entity": "MESx2bk",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "MES02",
+          "synonyms": [
+            "MES2",
+            "MES 2",
+            "MES 02",
+            "MES TWO"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "mes",
+      "values": [
+        {
+          "type": "patterns",
+          "value": "MES06",
+          "patterns": [
+            "[mM][eE][sS][\\s]?[0]?[6]"
+          ]
+        },
+        {
+          "type": "patterns",
+          "value": "MES09",
+          "patterns": [
+            "[mM][eE][sS][\\s]?[0]?[9]"
+          ]
+        },
+        {
+          "type": "patterns",
+          "value": "MES01",
+          "patterns": [
+            "[mM][eE][sS][\\s]?[0]?[1]"
+          ]
+        },
+        {
+          "type": "patterns",
+          "value": "MES02",
+          "patterns": [
+            "[mM][eE][sS][\\s]?[0]?[2]"
+          ]
+        },
+        {
+          "type": "patterns",
+          "value": "MES04",
+          "patterns": [
+            "[mM][eE][sS][\\s]?[0]?[4]"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "MES05",
+          "synonyms": [
+            "[mM][eE][sS][\\s]?[0]?[5]"
+          ]
+        },
+        {
+          "type": "patterns",
+          "value": "MES03",
+          "patterns": [
+            "[mM][eE][sS][\\s]?[0]?[3]"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-time",
+      "values": []
+    },
+    {
+      "entity": "Usermod",
+      "values": [
+        {
+          "type": "patterns",
+          "value": "CA",
+          "patterns": [
+            "[cC][aA][0-9][0-9][0-9][0-9][0-9]"
+          ]
+        },
+        {
+          "type": "patterns",
+          "value": "BA",
+          "patterns": [
+            "[bB][aA][0-9][0-9][0-9][0-9][0-9]"
+          ]
+        },
+        {
+          "type": "patterns",
+          "value": "DA",
+          "patterns": [
+            "[dD][aA][0-9][0-9][0-9][0-9][0-9]"
+          ]
+        },
+        {
+          "type": "patterns",
+          "value": "UA",
+          "patterns": [
+            "[uU][aA][0-9][0-9][0-9][0-9][0-9]"
+          ]
+        },
+        {
+          "type": "patterns",
+          "value": "AA",
+          "patterns": [
+            "[aA][aA][0-9][0-9][0-9][0-9][0-9]"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-number",
+      "values": []
+    },
+    {
+      "entity": "MESx1bk",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "MES01",
+          "synonyms": [
+            "MES1",
+            "Native System MES1",
+            "Native System MES01",
+            "MES 1",
+            "MES 01"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "MESx3bk",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "MES03",
+          "synonyms": [
+            "MES3",
+            "mes 3",
+            "mes 03",
+            "mesx3",
+            "mes03"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "Release",
+      "values": [
+        {
+          "type": "patterns",
+          "value": "R22",
+          "patterns": [
+            "[rR][\\s]?[2][\\.]?[2]"
+          ]
+        },
+        {
+          "type": "patterns",
+          "value": "R21",
+          "patterns": [
+            "[rR][\\s]?[2][\\.]?[1]"
+          ]
+        },
+        {
+          "type": "patterns",
+          "value": "R23",
+          "patterns": [
+            "[rR][\\s]?[2][\\.]?[3]"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    }
+  ],
+  "language": "en",
+  "metadata": {
+    "api_version": {
+      "major_version": "v1",
+      "minor_version": "2018-09-20"
+    }
+  },
+  "description": "Cognitive Car Dashboard workspace which allows multi-turn conversations to perform tasks in the car.",
+  "dialog_nodes": [
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Cloud Function returned status of $UsermodName on $SystemName: "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "$JoblogOutput"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1546893859421",
+      "metadata": {},
+      "conditions": "$UsermodName",
+      "dialog_node": "node_1_1547185422670",
+      "previous_sibling": "slot_48_1547229988655"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "Looking up $UsermodName on native system $SystemName at $SystemIP now... <jumping to the child node...>"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_2_1546893859421",
+      "actions": [
+        {
+          "name": "QueryPTFUsermod",
+          "type": "client",
+          "parameters": {
+            "systemIP": "$SystemIP",
+            "usermodName": "$UsermodName"
+          },
+          "result_variable": "JoblogOutput"
+        }
+      ],
+      "context": {
+        "mycreds": {
+          "user": "6dc48aeb-ca3f-41c8-9417-b8d956fa2457",
+          "password": "2DpyriN8oSsOqYJQOf1bpMkbg4v0Kxq27aikhyb7QHSPVCnrehV8savr4IkesXU0"
+        },
+        "SystemIP": "SSGMES3.tuc.stglabs.ibm.com",
+        "SystemName": "MES03",
+        "UsermodName": "<? input.text.extract('[abcduABCDU]+[aA]+[0-9][0-9][0-9][0-9][0-9]', 0) ?>",
+        "JoblogOutput": "",
+        "skip_user_input": true,
+        "useClientActions": true
+      },
+      "metadata": {},
+      "conditions": "@mes:MES03",
+      "dialog_node": "node_1_1547072737177",
+      "previous_sibling": "node_2_1547058342402"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "Looking up $UsermodName on native system $SystemName at $SystemIP now... <jumping to the child node...>"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_2_1546893859421",
+      "actions": [
+        {
+          "name": "QueryPTFUsermod",
+          "type": "client",
+          "parameters": {
+            "systemIP": "$SystemIP",
+            "usermodName": "$UsermodName"
+          },
+          "result_variable": "JoblogOutput"
+        }
+      ],
+      "context": {
+        "mycreds": {
+          "user": "6dc48aeb-ca3f-41c8-9417-b8d956fa2457",
+          "password": "2DpyriN8oSsOqYJQOf1bpMkbg4v0Kxq27aikhyb7QHSPVCnrehV8savr4IkesXU0"
+        },
+        "SystemIP": "SSGMES1.tuc.stglabs.ibm.com",
+        "SystemName": "MES01",
+        "UsermodName": "<? input.text.extract('[abcduABCDU]+[aA]+[0-9][0-9][0-9][0-9][0-9]', 0) ?>",
+        "JoblogOutput": "",
+        "skip_user_input": true,
+        "useClientActions": true
+      },
+      "metadata": {},
+      "conditions": "@mes:MES01",
+      "dialog_node": "node_1_1546969004783",
+      "previous_sibling": "handler_10_1546970095311"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "You like to query the status of a sysmod, I see. Please provide the name of the sysmod and the native system you like to check."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_2_1546893859421",
+      "metadata": {},
+      "event_name": "focus",
+      "dialog_node": "handler_3_1547058379923",
+      "previous_sibling": "node_1_1546969004783"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "Looking up $UsermodName on native system $SystemName at $SystemIP now... <jumping to the child node...>"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_2_1546893859421",
+      "actions": [
+        {
+          "name": "QueryPTFUsermod",
+          "type": "client",
+          "parameters": {
+            "systemIP": "$SystemIP",
+            "usermodName": "$UsermodName"
+          },
+          "result_variable": "JoblogOutput"
+        }
+      ],
+      "context": {
+        "mycreds": {
+          "user": "6dc48aeb-ca3f-41c8-9417-b8d956fa2457",
+          "password": "2DpyriN8oSsOqYJQOf1bpMkbg4v0Kxq27aikhyb7QHSPVCnrehV8savr4IkesXU0"
+        },
+        "SystemIP": "SSGMES9.tuc.stglabs.ibm.com",
+        "SystemName": "MES09",
+        "UsermodName": "<? input.text.extract('[abcduABCDU]+[aA]+[0-9][0-9][0-9][0-9][0-9]', 0) ?>",
+        "JoblogOutput": "",
+        "skip_user_input": true,
+        "useClientActions": true
+      },
+      "metadata": {},
+      "conditions": "@mes:MES09",
+      "dialog_node": "node_5_1547072750821",
+      "previous_sibling": "node_4_1547072748374"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "Looking up $UsermodName on native system $SystemName at $SystemIP now... <jumping to the child node...>"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_2_1546893859421",
+      "actions": [
+        {
+          "name": "QueryPTFUsermod",
+          "type": "client",
+          "parameters": {
+            "systemIP": "$SystemIP",
+            "usermodName": "$UsermodName"
+          },
+          "result_variable": "JoblogOutput"
+        }
+      ],
+      "context": {
+        "mycreds": {
+          "user": "6dc48aeb-ca3f-41c8-9417-b8d956fa2457",
+          "password": "2DpyriN8oSsOqYJQOf1bpMkbg4v0Kxq27aikhyb7QHSPVCnrehV8savr4IkesXU0"
+        },
+        "SystemIP": "SSGMES2.tuc.stglabs.ibm.com",
+        "SystemName": "MES02",
+        "UsermodName": "<? input.text.extract('[abcduABCDU]+[aA]+[0-9][0-9][0-9][0-9][0-9]', 0) ?>",
+        "JoblogOutput": "",
+        "skip_user_input": true,
+        "useClientActions": true
+      },
+      "metadata": {},
+      "conditions": "@mes:MES02",
+      "dialog_node": "node_2_1547058342402",
+      "previous_sibling": "handler_3_1547058379923"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "Looking up $UsermodName on native system $SystemName at $SystemIP now... <jumping to the child node...>"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_2_1546893859421",
+      "actions": [
+        {
+          "name": "QueryPTFUsermod",
+          "type": "client",
+          "parameters": {
+            "systemIP": "$SystemIP",
+            "usermodName": "$UsermodName"
+          },
+          "result_variable": "JoblogOutput"
+        }
+      ],
+      "context": {
+        "mycreds": {
+          "user": "6dc48aeb-ca3f-41c8-9417-b8d956fa2457",
+          "password": "2DpyriN8oSsOqYJQOf1bpMkbg4v0Kxq27aikhyb7QHSPVCnrehV8savr4IkesXU0"
+        },
+        "SystemIP": "SSGMES4.tuc.stglabs.ibm.com",
+        "SystemName": "MES04",
+        "UsermodName": "<? input.text.extract('[abcduABCDU]+[aA]+[0-9][0-9][0-9][0-9][0-9]', 0) ?>",
+        "JoblogOutput": "",
+        "skip_user_input": true,
+        "useClientActions": true
+      },
+      "metadata": {},
+      "conditions": "@mes:MES04",
+      "dialog_node": "node_2_1547072741814",
+      "previous_sibling": "node_1_1547072737177"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": []
+        }
+      },
+      "parent": "node_2_1546893859421",
+      "metadata": {},
+      "conditions": "@Usermod:AA[0-9]*",
+      "event_name": "generic",
+      "dialog_node": "handler_10_1546970095311",
+      "previous_sibling": "node_1_1547185422670"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "Looking up $UsermodName on native system $SystemName at $SystemIP now... <jumping to the child node...>"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_2_1546893859421",
+      "actions": [
+        {
+          "name": "QueryPTFUsermod",
+          "type": "client",
+          "parameters": {
+            "systemIP": "$SystemIP",
+            "usermodName": "$UsermodName"
+          },
+          "result_variable": "JoblogOutput"
+        }
+      ],
+      "context": {
+        "mycreds": {
+          "user": "6dc48aeb-ca3f-41c8-9417-b8d956fa2457",
+          "password": "2DpyriN8oSsOqYJQOf1bpMkbg4v0Kxq27aikhyb7QHSPVCnrehV8savr4IkesXU0"
+        },
+        "SystemIP": "SSGMES5.tuc.stglabs.ibm.com",
+        "SystemName": "MES05",
+        "UsermodName": "<? input.text.extract('[abcduABCDU]+[aA]+[0-9][0-9][0-9][0-9][0-9]', 0) ?>",
+        "JoblogOutput": "",
+        "skip_user_input": true,
+        "useClientActions": true
+      },
+      "metadata": {},
+      "conditions": "@mes:MES05",
+      "dialog_node": "node_3_1547072745342",
+      "previous_sibling": "node_2_1547072741814"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "Looking up $UsermodName on native system $SystemName at $SystemIP now... <jumping to the child node...>"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_2_1546893859421",
+      "actions": [
+        {
+          "name": "QueryPTFUsermod",
+          "type": "client",
+          "parameters": {
+            "systemIP": "$SystemIP",
+            "usermodName": "$UsermodName"
+          },
+          "result_variable": "JoblogOutput"
+        }
+      ],
+      "context": {
+        "mycreds": {
+          "user": "6dc48aeb-ca3f-41c8-9417-b8d956fa2457",
+          "password": "2DpyriN8oSsOqYJQOf1bpMkbg4v0Kxq27aikhyb7QHSPVCnrehV8savr4IkesXU0"
+        },
+        "SystemIP": "SSGMES6.tuc.stglabs.ibm.com",
+        "SystemName": "MES06",
+        "UsermodName": "<? input.text.extract('[abcduABCDU]+[aA]+[0-9][0-9][0-9][0-9][0-9]', 0) ?>",
+        "JoblogOutput": "",
+        "skip_user_input": true,
+        "useClientActions": true
+      },
+      "metadata": {},
+      "conditions": "@mes:MES06",
+      "dialog_node": "node_4_1547072748374",
+      "previous_sibling": "node_3_1547072745342"
+    },
+    {
+      "type": "slot",
+      "parent": "node_2_1546893859421",
+      "dialog_node": "slot_48_1547229988655"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "Hello! Welcome to our Device Support service!"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_1_1546882260996",
+      "metadata": {},
+      "conditions": "true",
+      "dialog_node": "node_5_1546882418219"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_2_1547701621752",
+      "event_name": "focus",
+      "dialog_node": "handler_4_1547701621752",
+      "previous_sibling": "handler_3_1547701621752"
+    },
+    {
+      "type": "event_handler",
+      "parent": "slot_2_1547701621752",
+      "event_name": "input",
+      "dialog_node": "handler_3_1547701621752"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "Print print print $UsermodName and $SystemIP and $SystemName"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_2_1547153902774",
+      "context": {
+        "UsermodName": "<? input.text.extract('[abcduABCDU]+[aA]+[0-9][0-9][0-9][0-9][0-9]', 0) ?>"
+      },
+      "metadata": {},
+      "conditions": "@Usermod",
+      "dialog_node": "node_21_1547153902790",
+      "previous_sibling": "node_20_1547153902790"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Installing is completed. The sysmod entries are:"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "$JoblogOutput"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1547153902774",
+      "metadata": {},
+      "conditions": "$UsermodName",
+      "dialog_node": "node_1_1547212123531",
+      "previous_sibling": "slot_2_1547701621752"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "Installing $UsermodName on $SystemIP..."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_2_1547153902774",
+      "actions": [
+        {
+          "name": "InstallUsermod",
+          "type": "client",
+          "parameters": {
+            "systemIP": "$SystemIP",
+            "usermodName": "$UsermodName"
+          },
+          "result_variable": "JoblogOutput"
+        }
+      ],
+      "context": {
+        "mycreds": {
+          "user": "6dc48aeb-ca3f-41c8-9417-b8d956fa2457",
+          "password": "2DpyriN8oSsOqYJQOf1bpMkbg4v0Kxq27aikhyb7QHSPVCnrehV8savr4IkesXU0"
+        },
+        "SystemIP": "SSGMES6.tuc.stglabs.ibm.com",
+        "SystemName": "MES06",
+        "UsermodName": "<? input.text.extract('[abcduABCDU]+[aA]+[0-9][0-9][0-9][0-9][0-9]', 0) ?>",
+        "JoblogOutput": "",
+        "skip_user_input": true,
+        "useClientActions": true
+      },
+      "metadata": {},
+      "conditions": "@mes:MES06",
+      "dialog_node": "node_19_1547153902790",
+      "previous_sibling": "node_18_1547153902790"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "Installing $UsermodName on $SystemIP..."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_2_1547153902774",
+      "actions": [
+        {
+          "name": "InstallUsermod",
+          "type": "client",
+          "parameters": {
+            "systemIP": "$SystemIP",
+            "usermodName": "$UsermodName"
+          },
+          "result_variable": "JoblogOutput"
+        }
+      ],
+      "context": {
+        "mycreds": {
+          "user": "6dc48aeb-ca3f-41c8-9417-b8d956fa2457",
+          "password": "2DpyriN8oSsOqYJQOf1bpMkbg4v0Kxq27aikhyb7QHSPVCnrehV8savr4IkesXU0"
+        },
+        "SystemIP": "SSGMES2.tuc.stglabs.ibm.com",
+        "SystemName": "MES02",
+        "UsermodName": "<? input.text.extract('[abcduABCDU]+[aA]+[0-9][0-9][0-9][0-9][0-9]', 0) ?>",
+        "JoblogOutput": "",
+        "skip_user_input": true,
+        "useClientActions": true
+      },
+      "metadata": {},
+      "conditions": "@mes:MES02",
+      "dialog_node": "node_15_1547153902790",
+      "previous_sibling": "handler_13_1547153902790"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "Installing $UsermodName on $SystemIP..."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_2_1547153902774",
+      "actions": [
+        {
+          "name": "InstallUsermod",
+          "type": "client",
+          "parameters": {
+            "systemIP": "$SystemIP",
+            "usermodName": "$UsermodName"
+          },
+          "result_variable": "JoblogOutput"
+        }
+      ],
+      "context": {
+        "mycreds": {
+          "user": "6dc48aeb-ca3f-41c8-9417-b8d956fa2457",
+          "password": "2DpyriN8oSsOqYJQOf1bpMkbg4v0Kxq27aikhyb7QHSPVCnrehV8savr4IkesXU0"
+        },
+        "SystemIP": "SSGMES1.tuc.stglabs.ibm.com",
+        "SystemName": "MES01",
+        "UsermodName": "<? input.text.extract('[abcduABCDU]+[aA]+[0-9][0-9][0-9][0-9][0-9]', 0) ?>",
+        "JoblogOutput": "",
+        "skip_user_input": true,
+        "useClientActions": true
+      },
+      "metadata": {},
+      "conditions": "@mes:MES01",
+      "dialog_node": "node_14_1547153902790",
+      "previous_sibling": "node_1_1547212123531"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "You like to install a fix on a native system, I see. Please provide the name of the fix and the name of the native system you like to check."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_2_1547153902774",
+      "disabled": true,
+      "metadata": {},
+      "event_name": "focus",
+      "dialog_node": "handler_13_1547153902790",
+      "previous_sibling": "node_14_1547153902790"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "Installing $UsermodName on $SystemIP..."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_2_1547153902774",
+      "actions": [
+        {
+          "name": "InstallUsermod",
+          "type": "client",
+          "parameters": {
+            "systemIP": "$SystemIP",
+            "usermodName": "$UsermodName"
+          },
+          "result_variable": "JoblogOutput"
+        }
+      ],
+      "context": {
+        "mycreds": {
+          "user": "6dc48aeb-ca3f-41c8-9417-b8d956fa2457",
+          "password": "2DpyriN8oSsOqYJQOf1bpMkbg4v0Kxq27aikhyb7QHSPVCnrehV8savr4IkesXU0"
+        },
+        "SystemIP": "SSGMES3.tuc.stglabs.ibm.com",
+        "SystemName": "MES03",
+        "UsermodName": "<? input.text.extract('[abcduABCDU]+[aA]+[0-9][0-9][0-9][0-9][0-9]', 0) ?>",
+        "JoblogOutput": "",
+        "skip_user_input": true,
+        "useClientActions": true
+      },
+      "metadata": {},
+      "conditions": "@mes:MES03",
+      "dialog_node": "node_16_1547153902790",
+      "previous_sibling": "node_15_1547153902790"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "Installing $UsermodName on $SystemIP..."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_2_1547153902774",
+      "actions": [
+        {
+          "name": "InstallUsermod",
+          "type": "client",
+          "parameters": {
+            "systemIP": "$SystemIP",
+            "usermodName": "$UsermodName"
+          },
+          "result_variable": "JoblogOutput"
+        }
+      ],
+      "context": {
+        "mycreds": {
+          "user": "6dc48aeb-ca3f-41c8-9417-b8d956fa2457",
+          "password": "2DpyriN8oSsOqYJQOf1bpMkbg4v0Kxq27aikhyb7QHSPVCnrehV8savr4IkesXU0"
+        },
+        "SystemIP": "SSGMES4.tuc.stglabs.ibm.com",
+        "SystemName": "MES04",
+        "UsermodName": "<? input.text.extract('[abcduABCDU]+[aA]+[0-9][0-9][0-9][0-9][0-9]', 0) ?>",
+        "JoblogOutput": "",
+        "skip_user_input": true,
+        "useClientActions": true
+      },
+      "metadata": {},
+      "conditions": "@mes:MES04",
+      "dialog_node": "node_17_1547153902790",
+      "previous_sibling": "node_16_1547153902790"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "Installing $UsermodName on $SystemIP..."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_2_1547153902774",
+      "actions": [
+        {
+          "name": "InstallUsermod",
+          "type": "client",
+          "parameters": {
+            "systemIP": "$SystemIP",
+            "usermodName": "$UsermodName"
+          },
+          "result_variable": "JoblogOutput"
+        }
+      ],
+      "context": {
+        "mycreds": {
+          "user": "6dc48aeb-ca3f-41c8-9417-b8d956fa2457",
+          "password": "2DpyriN8oSsOqYJQOf1bpMkbg4v0Kxq27aikhyb7QHSPVCnrehV8savr4IkesXU0"
+        },
+        "SystemIP": "SSGMES5.tuc.stglabs.ibm.com",
+        "SystemName": "MES05",
+        "UsermodName": "<? input.text.extract('[abcduABCDU]+[aA]+[0-9][0-9][0-9][0-9][0-9]', 0) ?>",
+        "JoblogOutput": "",
+        "skip_user_input": true,
+        "useClientActions": true
+      },
+      "metadata": {},
+      "conditions": "@mes:MES05",
+      "dialog_node": "node_18_1547153902790",
+      "previous_sibling": "node_17_1547153902790"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "Installing $UsermodName on $SystemIP..."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_2_1547153902774",
+      "actions": [
+        {
+          "name": "InstallUsermod",
+          "type": "client",
+          "parameters": {
+            "systemIP": "$SystemIP",
+            "usermodName": "$UsermodName"
+          },
+          "result_variable": "JoblogOutput"
+        }
+      ],
+      "context": {
+        "mycreds": {
+          "user": "6dc48aeb-ca3f-41c8-9417-b8d956fa2457",
+          "password": "2DpyriN8oSsOqYJQOf1bpMkbg4v0Kxq27aikhyb7QHSPVCnrehV8savr4IkesXU0"
+        },
+        "SystemIP": "SSGMES9.tuc.stglabs.ibm.com",
+        "SystemName": "MES09",
+        "UsermodName": "<? input.text.extract('[abcduABCDU]+[aA]+[0-9][0-9][0-9][0-9][0-9]', 0) ?>",
+        "JoblogOutput": "",
+        "skip_user_input": true,
+        "useClientActions": true
+      },
+      "metadata": {},
+      "conditions": "@mes:MES09",
+      "dialog_node": "node_20_1547153902790",
+      "previous_sibling": "node_19_1547153902790"
+    },
+    {
+      "type": "slot",
+      "parent": "node_2_1547153902774",
+      "dialog_node": "slot_2_1547701621752"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_48_1547229988655",
+      "event_name": "focus",
+      "dialog_node": "handler_50_1547229988655",
+      "previous_sibling": "handler_49_1547229988655"
+    },
+    {
+      "type": "event_handler",
+      "parent": "slot_48_1547229988655",
+      "event_name": "input",
+      "dialog_node": "handler_49_1547229988655"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "Release R2.2 is on MES01 and MES06."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_1_1547575715159",
+      "metadata": {},
+      "conditions": "@Release:R22",
+      "dialog_node": "node_3_1547575788484",
+      "previous_sibling": "node_2_1547575747831"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "Release R2.3 is on MES03."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_1_1547575715159",
+      "metadata": {},
+      "conditions": "@Release:R23",
+      "dialog_node": "node_4_1547575851933",
+      "previous_sibling": "node_3_1547575788484"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "Release R2.1 is on MES02 and MES09."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_1_1547575715159",
+      "metadata": {},
+      "conditions": "@Release:R21",
+      "dialog_node": "node_2_1547575747831"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "MES05 is running release R2.4"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_5_1547576253623",
+      "metadata": {},
+      "conditions": "@mes:MES05",
+      "dialog_node": "node_10_1547576358932",
+      "previous_sibling": "node_9_1547576343098"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "MES09 is running release R2.1"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_5_1547576253623",
+      "metadata": {},
+      "conditions": "@mes:MES09",
+      "dialog_node": "node_12_1547576398954",
+      "previous_sibling": "node_11_1547576379773"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "MES02 is running release R2.1"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_5_1547576253623",
+      "metadata": {},
+      "conditions": "@mes:MES02",
+      "dialog_node": "node_7_1547576281844",
+      "previous_sibling": "node_6_1547576265849"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "MES06 is running release R2.2"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_5_1547576253623",
+      "metadata": {},
+      "conditions": "@mes:MES06",
+      "dialog_node": "node_11_1547576379773",
+      "previous_sibling": "node_10_1547576358932"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "MES04 is running release R2.4"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_5_1547576253623",
+      "metadata": {},
+      "conditions": "@mes:MES04",
+      "dialog_node": "node_9_1547576343098",
+      "previous_sibling": "node_8_1547576294130"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "MES03 is running release R2.3"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_5_1547576253623",
+      "metadata": {},
+      "conditions": "@mes:MES03",
+      "dialog_node": "node_8_1547576294130",
+      "previous_sibling": "node_7_1547576281844"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "MES01 is running release R2.2"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_5_1547576253623",
+      "metadata": {},
+      "conditions": "@mes:MES01",
+      "dialog_node": "node_6_1547576265849"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "text": {
+          "values": [
+            "What may I assist you? Do you like to query a sysmod or IPL a native system?",
+            "I am at your service. What do you like me to do? Do you like to query a sysmod or IPL a native system?",
+            "Please tell me your request. Do you like to query a sysmod or IPL a native system?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "metadata": {},
+      "conditions": "#Help",
+      "dialog_node": "node_1_1546851940349",
+      "previous_sibling": "node_1_1546893189166"
+    },
+    {
+      "type": "standard",
+      "output": {},
+      "metadata": {
+        "fallback": "leave",
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "next_step": {
+        "behavior": "skip_user_input"
+      },
+      "conditions": "#InstallFix && @Usermod && @mes",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_2_1547153902774",
+      "digress_out": "allow_all",
+      "previous_sibling": "node_2_1546893859421"
+    },
+    {
+      "type": "standard",
+      "title": "Native System MES03",
+      "output": {
+        "text": {
+          "values": [
+            "Your Native System is $MES1 $MES2 $MES3...Connecting... Enter your Usermod UAxxxxx, AAxxxxx, or BAxxxxx."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "context": {
+        "MES3": "<? input.text.extract('[mM]+[eE]+[sS]+[0?3?]+', 0) ?>"
+      },
+      "metadata": {},
+      "conditions": "@MESx3",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_2_1541269325564",
+      "previous_sibling": "node_1_1541269234655"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "text": {
+          "values": [
+            "My apologies. I have not been trained enough to understand this. Would you please try again? ",
+            "I am very sory, I don't quite understand that. May I ask you to try again?",
+            "I still can't get that. Am I getting you frustrated? "
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "metadata": {},
+      "conditions": "anything_else",
+      "dialog_node": "node_1_1546850336147",
+      "previous_sibling": "node_7_1547187012671"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "text": {
+          "values": [
+            "I am your virtual assistant built with Watson Assistance and Client Function services. Currently I can assist you in querying a sysmod (APAR/PTF) to know its installation status in a native system. I am being trained to do a lot more."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "metadata": {},
+      "conditions": "#about_bot",
+      "dialog_node": "node_1_1546893189166",
+      "previous_sibling": "node_1_1546882260996"
+    },
+    {
+      "type": "standard",
+      "output": {},
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#AskRelease",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_1_1547575715159",
+      "digress_out": "allow_all",
+      "previous_sibling": "node_8_1547542319774"
+    },
+    {
+      "type": "standard",
+      "title": "Native System MES01",
+      "output": {
+        "text": {
+          "values": [
+            "Your Native System is $MES1 $MES2 $MES3. Enter your Usermod UAxxxxx, AAxxxxx, or BAxxxxx."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "context": {
+        "MES1": "<? input.text.extract('[mM]+[eE]+[sS]+[0?1?]+', 0) ?>"
+      },
+      "metadata": {},
+      "conditions": "@MESx1",
+      "dialog_node": "node_1_1540855646512",
+      "previous_sibling": "node_2_1547153902774"
+    },
+    {
+      "type": "standard",
+      "output": {},
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#Greetings",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_1_1546882260996",
+      "digress_out": "allow_all",
+      "previous_sibling": "Welcome"
+    },
+    {
+      "type": "standard",
+      "output": {},
+      "metadata": {
+        "fallback": "leave",
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "next_step": {
+        "behavior": "skip_user_input"
+      },
+      "conditions": "#QueryUsermod && @Usermod && @mes",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_2_1546893859421",
+      "digress_out": "allow_all",
+      "previous_sibling": "node_1_1546851940349"
+    },
+    {
+      "type": "standard",
+      "output": {},
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#AskRelease2 && @mes",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_5_1547576253623",
+      "digress_out": "allow_all",
+      "previous_sibling": "node_1_1547575715159"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "text": {
+          "values": [],
+          "selection_policy": "sequential"
+        }
+      },
+      "metadata": {},
+      "conditions": "#IPL",
+      "dialog_node": "node_8_1547542319774",
+      "previous_sibling": "node_2_1541269325564"
+    },
+    {
+      "type": "standard",
+      "title": "Native System MES02",
+      "output": {
+        "text": {
+          "values": [
+            "Your Native System is $MES1 $MES2 $MES3...Connecting... Enter your Usermod UAxxxxx, AAxxxxx, or BAxxxxx."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "context": {
+        "MES2": "<? input.text.extract('[mM]+[eE]+[sS]+[0?2?]+', 0) ?>"
+      },
+      "metadata": {},
+      "conditions": "@MESx2",
+      "dialog_node": "node_1_1541269234655",
+      "previous_sibling": "node_1_1540855646512"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "text": {
+          "values": [
+            "Thank you for letting me assist you today. Have a wonderful one. Good bye."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "metadata": {},
+      "conditions": "#Goodbye",
+      "dialog_node": "node_6_1546882523954",
+      "previous_sibling": "node_5_1547576253623"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "text": {
+          "values": [
+            "It's my pleasure."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "metadata": {},
+      "conditions": "#Thanks",
+      "dialog_node": "node_7_1547187012671",
+      "previous_sibling": "node_6_1546882523954"
+    },
+    {
+      "type": "standard",
+      "title": "Welcome",
+      "output": {
+        "text": {
+          "values": [
+            "Hello. Welcome to the service of SPME virtual assistant. Currently, I can assist you in querying info from the DFSMS z/OS native systems or demanding an IPLing. How can I assist you today?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "context": {
+        "JoglogOutput2": "Camvu is sleepy"
+      },
+      "metadata": {},
+      "conditions": "welcome",
+      "dialog_node": "Welcome"
+    }
+  ],
+  "workspace_id": "88eeb00e-3500-49db-ac00-2f5b9140694d",
+  "counterexamples": [
+    {
+      "text": "aho"
+    },
+    {
+      "text": "asdasdasda"
+    },
+    {
+      "text": "asdasidjiwe"
+    },
+    {
+      "text": "cats are my favorite animal"
+    },
+    {
+      "text": "when will it be funny"
+    },
+    {
+      "text": "which color is best for wedding"
+    }
+  ],
+  "system_settings": {
+    "disambiguation": {
+      "prompt": "Did you mean:",
+      "none_of_the_above_prompt": "None of the above"
+    },
+    "human_agent_assist": {
+      "prompt": "Did you mean:"
+    }
+  },
+  "learning_opt_out": false,
+  "status": "Available"
+}
